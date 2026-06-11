@@ -51,10 +51,10 @@ will be reviewed and investigated promptly and fairly.
 Community leaders will follow these Community Impact Guidelines in determining the consequences
 for any action they deem in violation of this Code of Conduct:
 
-1. **Correction** — Private, written warning providing clarity around the violation.
-2. **Warning** — A warning with consequences for continued behavior.
-3. **Temporary Ban** — A temporary ban from any sort of interaction with the community.
-4. **Permanent Ban** — A permanent ban from any sort of public interaction within the community.
+1. **Correction.** A private, written warning providing clarity around the violation.
+2. **Warning.** A warning with consequences for continued behavior.
+3. **Temporary Ban.** A temporary ban from any sort of interaction with the community.
+4. **Permanent Ban.** A permanent ban from any sort of public interaction within the community.
 
 ## Attribution
 

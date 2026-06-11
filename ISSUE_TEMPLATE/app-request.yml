@@ -1,4 +1,4 @@
-name: 📦 Request an app
+name: Request an app
 description: Propose a new application for the Quenchworks catalog (hardened image + chart).
 title: "[app]: <name>"
 labels: ["app-request"]
