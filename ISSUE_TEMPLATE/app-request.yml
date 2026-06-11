@@ -1,0 +1,56 @@
+name: 📦 Request an app
+description: Propose a new application for the Quenchworks catalog (hardened image + chart).
+title: "[app]: <name>"
+labels: ["app-request"]
+body:
+  - type: input
+    id: app
+    attributes:
+      label: Application
+      placeholder: e.g. postgresql
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Upstream source repository
+      placeholder: https://github.com/postgres/postgres
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Target version
+      placeholder: e.g. 16.4
+    validations:
+      required: true
+  - type: input
+    id: license
+    attributes:
+      label: Upstream license
+      description: Must be redistributable. Note any SSPL/AGPL/source-available concerns.
+      placeholder: e.g. PostgreSQL License
+    validations:
+      required: true
+  - type: dropdown
+    id: tier
+    attributes:
+      label: Suggested rebuild tier
+      options:
+        - critical (daily)
+        - standard (weekly)
+        - low (monthly)
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything else?
+      description: Clustering/replication/TLS needs, why you want it, links to upstream docs.
+  - type: checkboxes
+    id: cleanroom
+    attributes:
+      label: Clean-room acknowledgement
+      options:
+        - label: I understand charts are authored from the app's own upstream docs, never copied from other vendors' charts.
+          required: true
