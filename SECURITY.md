@@ -8,7 +8,7 @@ you to.
 Every image is built by org CI and signed with cosign keyless (Sigstore). Verify it:
 
 ```bash
-cosign verify ghcr.io/quenchworks/<app> \
+cosign verify ghcr.io/quenchworks/images/<app> \
   --certificate-identity-regexp 'https://github.com/quenchworks/.+' \
   --certificate-oidc-issuer https://token.actions.githubusercontent.com
 ```
@@ -16,8 +16,8 @@ cosign verify ghcr.io/quenchworks/<app> \
 Inspect the SBOM and build provenance attached to the image:
 
 ```bash
-cosign download sbom ghcr.io/quenchworks/<app>          # SPDX SBOM
-cosign verify-attestation ghcr.io/quenchworks/<app> \
+cosign download sbom ghcr.io/quenchworks/images/<app>          # SPDX SBOM
+cosign verify-attestation ghcr.io/quenchworks/images/<app> \
   --type slsaprovenance \
   --certificate-identity-regexp 'https://github.com/quenchworks/.+' \
   --certificate-oidc-issuer https://token.actions.githubusercontent.com
