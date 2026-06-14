@@ -13,15 +13,25 @@ cosign verify ghcr.io/quenchworks/images/<app> \
   --certificate-oidc-issuer https://token.actions.githubusercontent.com
 ```
 
-Inspect the SBOM and build provenance attached to the image:
+Each image also carries an SPDX SBOM and a SLSA build-provenance attestation, attached to the same
+digest as Sigstore-signed OCI referrers. List them with `cosign tree`, and verify them with the
+GitHub CLI (resolve `<digest>` from the catalog page or `crane digest`):
 
 ```bash
-cosign download sbom ghcr.io/quenchworks/images/<app>          # SPDX SBOM
-cosign verify-attestation ghcr.io/quenchworks/images/<app> \
-  --type slsaprovenance \
-  --certificate-identity-regexp 'https://github.com/quenchworks/.+' \
-  --certificate-oidc-issuer https://token.actions.githubusercontent.com
+cosign tree ghcr.io/quenchworks/images/<app>@sha256:<digest>   # signature + attestations
+
+# build provenance (SLSA): which workflow built it, from what
+gh attestation verify oci://ghcr.io/quenchworks/images/<app>@sha256:<digest> \
+  --owner quenchworks
+
+# SPDX SBOM: the package inventory
+gh attestation verify oci://ghcr.io/quenchworks/images/<app>@sha256:<digest> \
+  --owner quenchworks \
+  --predicate-type https://spdx.dev/Document
 ```
+
+See the [SBOM & provenance guide](https://quenchworks.mkabumattar.com/docs/sbom) for reading the
+SBOM document itself and using these checks in CI.
 
 Charts are pinned to images by `sha256` digest, never a mutable tag, so what you install is
 exactly the artifact that passed the scan-and-sign gate.
