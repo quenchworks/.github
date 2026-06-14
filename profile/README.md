@@ -2,53 +2,80 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/quenchworks/.github/main/profile/assets/logo-dark.svg">
-  <img alt="Quenchworks" src="https://raw.githubusercontent.com/quenchworks/.github/main/profile/assets/logo.svg" width="460">
+  <img alt="QuenchWorks" src="https://raw.githubusercontent.com/quenchworks/.github/main/profile/assets/logo.svg" width="460">
 </picture>
 
-### Hardened, 0-CVE Helm charts and container images. Built from source, signed, and pinned by digest.
+# The hardened catalog Bitnami left behind.
 
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/quenchworks)
-[![Built with Wolfi](https://img.shields.io/badge/built%20with-Wolfi%20%2F%20apko-1d2b3a.svg)](https://github.com/wolfi-dev)
+### 0-CVE container images and signed Helm charts. Built from source, cosign-signed, pinned by digest. Free and independent.
+
+[![Images](https://img.shields.io/badge/images-62%20hardened-0a0a0c.svg)](https://quenchworks.mkabumattar.com/images)
+[![Charts](https://img.shields.io/badge/charts-52%20signed-0a0a0c.svg)](https://quenchworks.mkabumattar.com/charts)
+[![Fixable CVEs](https://img.shields.io/badge/fixable%20CVEs-0-1d2b3a.svg)](https://quenchworks.mkabumattar.com/security)
+[![Built with Wolfi](https://img.shields.io/badge/built%20from%20source-Wolfi%20%2F%20apko-1d2b3a.svg)](https://github.com/wolfi-dev)
 [![Signed with cosign](https://img.shields.io/badge/signed-cosign%20keyless-0a0a0c.svg)](https://docs.sigstore.dev/)
-[![Pinned by digest](https://img.shields.io/badge/pinned-by%20digest-0a0a0c.svg)](https://quenchworks.mkabumattar.com/docs/pin-by-digest)
+[![Multi-arch](https://img.shields.io/badge/arch-amd64%20%2B%20arm64-0a0a0c.svg)](https://quenchworks.mkabumattar.com/images)
+[![ArtifactHub](https://img.shields.io/badge/ArtifactHub-verified%20publisher-417598.svg)](https://artifacthub.io/packages/search?org=quenchworks)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/quenchworks)
 
-[**Website**](https://quenchworks.mkabumattar.com) · [**Charts**](https://quenchworks.mkabumattar.com/charts) · [**Images**](https://quenchworks.mkabumattar.com/images) · [**ArtifactHub**](https://artifacthub.io/packages/search?org=quenchworks) · [**GHCR**](https://github.com/orgs/quenchworks/packages)
+[**Website**](https://quenchworks.mkabumattar.com) · [**Charts**](https://quenchworks.mkabumattar.com/charts) · [**Images**](https://quenchworks.mkabumattar.com/images) · [**Roadmap**](https://quenchworks.mkabumattar.com/roadmap) · [**Docs**](https://quenchworks.mkabumattar.com/docs) · [**ArtifactHub**](https://artifacthub.io/packages/search?org=quenchworks)
 
 </div>
 
 ---
 
-## What is Quenchworks?
+## The catalog moved. Your stack didn't.
 
-Quenchworks is an independent catalog of hardened container images and clean-room Helm charts for
-the infrastructure you actually run: databases, caches, search, message queues, and coordination.
+A lot of platforms were built on free, hardened images from the Bitnami catalog. Those images moved behind a paywall and into a legacy registry, on a clock. The job they did didn't go away: you still need a database, a cache, a queue, a gateway, that boots, runs nonroot, and doesn't drag a pile of CVEs into your cluster.
 
-**28 datastores ship end to end today**, every image paired with a matching chart, across relational,
-document, wide-column, key-value, search, time-series, analytical, graph, messaging, and coordination.
-Browse them at [quenchworks.mkabumattar.com/charts](https://quenchworks.mkabumattar.com/charts).
+Rebuilding all of that yourself is real work, and keeping it at zero CVEs is work that never stops.
 
-Every image is built from source on [Wolfi](https://github.com/wolfi-dev) with
-[melange](https://github.com/chainguard-dev/melange) and
-[apko](https://github.com/chainguard-dev/apko). No Dockerfiles, and nothing inherited from another
-distro. Each one:
+## QuenchWorks rebuilds it, in the open, for free.
 
-- passes a hard **0 fixable CVE** gate (Trivy, fail-on-fixable) before it can publish,
-- runs as **nonroot** on a **read-only root filesystem**,
-- is **multi-arch** (linux/amd64 + linux/arm64),
-- ships an **SBOM** and is **signed with cosign** (keyless),
-- and is rebuilt **daily**, so "0 CVEs" stays true tomorrow and not just on release day.
+**62 hardened images** and **52 signed Helm charts** for the infrastructure you actually run. Every image is built from source on [Wolfi](https://github.com/wolfi-dev) with [melange](https://github.com/chainguard-dev/melange) and [apko](https://github.com/chainguard-dev/apko). No Dockerfiles, nothing inherited from another distro. Then each one:
 
-Every chart pins its image strictly by `sha256` digest (a tag-only reference is refused on purpose),
-shares one hardened security baseline through the `quench-common` library chart, is cosign-signed,
-and is listed on ArtifactHub as a verified publisher with a Values schema.
+- clears a hard **0 fixable CVE** gate (Trivy, fail-on-fixable) before it can publish,
+- runs **nonroot** on a **read-only root filesystem**,
+- ships as a **multi-arch** index (linux/amd64 + linux/arm64),
+- carries an **SBOM** and a **cosign** keyless signature,
+- is **rebuilt daily**, so a clean scan stays true tomorrow instead of aging out.
 
-> _Quench_ is the metallurgy step that hardens hot metal by cooling it fast. That is the idea.
+Every chart pins its image strictly by `sha256` digest (a tag-only reference is refused on purpose), shares one hardened security baseline through the `quench-common` library chart, is cosign-signed, and ships on ArtifactHub as a **verified publisher** with a Values schema.
 
-## Why it exists
+> _Quench_ is the metallurgy step that hardens hot metal by cooling it fast. Same idea, fewer CVEs.
 
-The free, hardened images many teams relied on moved behind a paywall and into a legacy registry.
-Quenchworks rebuilds that in the open, from source, and for free: a drop-in hardened path off the
-Bitnami catalog, kept honest with a daily rebuild and public provenance you can check yourself.
+## 30 seconds to a hardened Redis
+
+```bash
+# install the chart (the image is already signed and pinned by digest for you)
+helm install cache oci://ghcr.io/quenchworks/charts/redis
+
+# verify any image we ship, yourself
+cosign verify ghcr.io/quenchworks/images/redis \
+  --certificate-identity-regexp 'https://github.com/quenchworks/.+' \
+  --certificate-oidc-issuer https://token.actions.githubusercontent.com
+```
+
+No account, no token, no paywall. Swap `redis` for any app in the catalog.
+
+## What's in the catalog
+
+| | |
+|---|---|
+| **Relational** | PostgreSQL · MariaDB · MySQL · CockroachDB |
+| **Document** | CouchDB · FerretDB · DocumentDB · MongoDB |
+| **Key-value / cache** | Valkey · Redis · Memcached · Dragonfly |
+| **Wide-column** | Cassandra · ScyllaDB |
+| **Search / vector** | OpenSearch · Solr · Meilisearch · Qdrant · Elasticsearch |
+| **Streaming / messaging** | Kafka · NATS · RabbitMQ · Pulsar |
+| **Coordination** | etcd · ZooKeeper · Temporal |
+| **Observability** | Prometheus · Grafana · Loki · Tempo · VictoriaMetrics · OpenTelemetry Collector · Vector · Fluent Bit |
+| **Gateways / proxies** | Nginx · Caddy · Traefik · HAProxy |
+| **Object storage** | Garage · RustFS · SeaweedFS |
+| **Secrets / identity** | OpenBao · Keycloak |
+| **Registry · Git · CI/IaC** | Harbor · Gitea · Atlantis |
+
+Browse all of it, with versions, digests, and provenance, at [quenchworks.mkabumattar.com](https://quenchworks.mkabumattar.com).
 
 ## The repositories
 
@@ -56,26 +83,16 @@ Bitnami catalog, kept honest with a daily rebuild and public provenance you can 
 |------|------------|
 | [**images**](https://github.com/quenchworks/images) | The image factory: melange + apko builds, the 0-CVE gate, cosign signing, GHCR publish. |
 | [**charts**](https://github.com/quenchworks/charts) | Clean-room Helm charts, each pinned to a signed image digest and published as an OCI artifact. |
-| [**common**](https://github.com/quenchworks/common) | `quench-common`, the shared library chart: hardened security contexts and the digest-only image resolver. |
+| [**common**](https://github.com/quenchworks/common) | `quench-common`, the shared library chart: the hardened security baseline and the digest-only image resolver. |
+| [**website**](https://github.com/quenchworks/website) | The catalog site, generated straight from the images and charts repos. |
 
-## Verify anything we ship
+## Honest about licensing
 
-```bash
-cosign verify ghcr.io/quenchworks/images/postgresql \
-  --certificate-identity-regexp 'https://github.com/quenchworks/.+' \
-  --certificate-oidc-issuer https://token.actions.githubusercontent.com
-```
-
-## A note on licensing
-
-We lead with the truly-open option in every category. A few source-available datastores (MongoDB and
-Elasticsearch under SSPL, CockroachDB and Dragonfly under BSL) are carried with a loud license note,
-because they are **not** OSI-approved open source. Where a clean fork already covers the slot we say
-so plainly: Valkey for Redis, OpenSearch for Elasticsearch, FerretDB and DocumentDB for MongoDB.
+We lead with the truly-open option in every category. Two source-available datastores, MongoDB and Elasticsearch (both SSPL-1.0), are carried with a loud license note because they are **not** OSI-approved open source, and we name the clean fork that covers the slot: OpenSearch for Elasticsearch, FerretDB plus DocumentDB for MongoDB.
 
 ## License
 
-MIT. Built independently, and not affiliated with any upstream distribution or vendor.
+MIT. Built independently. Not affiliated with any upstream distribution or vendor.
 
 <div align="center">
 
