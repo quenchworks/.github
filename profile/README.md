@@ -50,13 +50,13 @@ Every chart pins its image strictly by `sha256` digest (a tag-only reference is 
 # install the chart (the image is already signed and pinned by digest for you)
 helm install cache oci://ghcr.io/quenchworks/charts/redis
 
-# verify any image we ship, yourself
-cosign verify ghcr.io/quenchworks/images/redis \
+# verify any image we ship, yourself (images are tagged by version, no :latest)
+cosign verify ghcr.io/quenchworks/images/redis:8.8.0 \
   --certificate-identity-regexp 'https://github.com/quenchworks/.+' \
   --certificate-oidc-issuer https://token.actions.githubusercontent.com
 ```
 
-No account, no token, no paywall. Swap `redis` for any app in the catalog.
+No account, no token, no paywall. Swap `redis:8.8.0` for any app and version in the catalog.
 
 ## What's in the catalog
 
