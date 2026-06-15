@@ -9,8 +9,8 @@
 
 ### 0-CVE container images and signed Helm charts. Built from source, cosign-signed, pinned by digest. Free and independent.
 
-[![Images](https://img.shields.io/badge/images-62%20hardened-0a0a0c.svg)](https://quench-works.com/images)
-[![Charts](https://img.shields.io/badge/charts-52%20signed-0a0a0c.svg)](https://quench-works.com/charts)
+[![Images](https://img.shields.io/badge/images-92%20hardened-0a0a0c.svg)](https://quench-works.com/images)
+[![Charts](https://img.shields.io/badge/charts-54%20signed-0a0a0c.svg)](https://quench-works.com/charts)
 [![Fixable CVEs](https://img.shields.io/badge/fixable%20CVEs-0-1d2b3a.svg)](https://quench-works.com/security)
 [![Built with Wolfi](https://img.shields.io/badge/built%20from%20source-Wolfi%20%2F%20apko-1d2b3a.svg)](https://github.com/wolfi-dev)
 [![Signed with cosign](https://img.shields.io/badge/signed-cosign%20keyless-0a0a0c.svg)](https://docs.sigstore.dev/)
@@ -32,7 +32,7 @@ Rebuilding all of that yourself is real work, and keeping it at zero CVEs is wor
 
 ## QuenchWorks rebuilds it, in the open, for free.
 
-**62 hardened images** and **52 signed Helm charts** for the infrastructure you actually run. Every image is built from source on [Wolfi](https://github.com/wolfi-dev) with [melange](https://github.com/chainguard-dev/melange) and [apko](https://github.com/chainguard-dev/apko). No Dockerfiles, nothing inherited from another distro. Then each one:
+**92 hardened images** and **54 signed Helm charts** for the infrastructure you actually run. Every image is built from source on [Wolfi](https://github.com/wolfi-dev) with [melange](https://github.com/chainguard-dev/melange) and [apko](https://github.com/chainguard-dev/apko). No Dockerfiles, nothing inherited from another distro. Then each one:
 
 - clears a hard **0 fixable CVE** gate (Trivy, fail-on-fixable) before it can publish,
 - runs **nonroot** on a **read-only root filesystem**,
