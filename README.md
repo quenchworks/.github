@@ -20,6 +20,6 @@ Files here apply to every repo in the org unless that repo overrides them.
 - **Images**: [quenchworks/images](https://github.com/quenchworks/images), the build factory.
 - **Charts**: [quenchworks/charts](https://github.com/quenchworks/charts), the signed Helm charts.
 - **Common**: [quenchworks/common](https://github.com/quenchworks/common), the `quench-common` library chart.
-- **Website**: [quenchworks.mkabumattar.com](https://quenchworks.mkabumattar.com), browse the whole catalog.
+- **Website**: [quench-works.com](https://quench-works.com), browse the whole catalog.
 
 > Brand note: the mark is the iso-layered cube, monochrome only. Don't recolor it or change the proportions.

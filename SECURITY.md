@@ -32,7 +32,7 @@ gh attestation verify oci://ghcr.io/quenchworks/images/redis:8.8.0 \
   --predicate-type https://spdx.dev/Document
 ```
 
-See the [SBOM & provenance guide](https://quenchworks.mkabumattar.com/docs/sbom) for reading the
+See the [SBOM & provenance guide](https://quench-works.com/docs/sbom) for reading the
 SBOM document itself and using these checks in CI.
 
 Charts are pinned to images by `sha256` digest, never a mutable tag, so what you install is
@@ -51,7 +51,7 @@ If you find a vulnerability in a Quenchworks image, chart, or pipeline:
 
 - **Preferred:** open a [private security advisory](https://github.com/quenchworks/images/security/advisories/new)
   on the relevant repo (GitHub → Security → Report a vulnerability).
-- **Or email:** `quenchworks@mkabumattar.com` with details and reproduction steps.
+- **Or email:** `info@quench-works.com` with details and reproduction steps.
 
 Please do not open a public issue for an undisclosed vulnerability. We try to acknowledge within
 72 hours and will work out a fix and disclosure timeline with you.

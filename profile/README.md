@@ -9,16 +9,16 @@
 
 ### 0-CVE container images and signed Helm charts. Built from source, cosign-signed, pinned by digest. Free and independent.
 
-[![Images](https://img.shields.io/badge/images-62%20hardened-0a0a0c.svg)](https://quenchworks.mkabumattar.com/images)
-[![Charts](https://img.shields.io/badge/charts-52%20signed-0a0a0c.svg)](https://quenchworks.mkabumattar.com/charts)
-[![Fixable CVEs](https://img.shields.io/badge/fixable%20CVEs-0-1d2b3a.svg)](https://quenchworks.mkabumattar.com/security)
+[![Images](https://img.shields.io/badge/images-62%20hardened-0a0a0c.svg)](https://quench-works.com/images)
+[![Charts](https://img.shields.io/badge/charts-52%20signed-0a0a0c.svg)](https://quench-works.com/charts)
+[![Fixable CVEs](https://img.shields.io/badge/fixable%20CVEs-0-1d2b3a.svg)](https://quench-works.com/security)
 [![Built with Wolfi](https://img.shields.io/badge/built%20from%20source-Wolfi%20%2F%20apko-1d2b3a.svg)](https://github.com/wolfi-dev)
 [![Signed with cosign](https://img.shields.io/badge/signed-cosign%20keyless-0a0a0c.svg)](https://docs.sigstore.dev/)
-[![Multi-arch](https://img.shields.io/badge/arch-amd64%20%2B%20arm64-0a0a0c.svg)](https://quenchworks.mkabumattar.com/images)
+[![Multi-arch](https://img.shields.io/badge/arch-amd64%20%2B%20arm64-0a0a0c.svg)](https://quench-works.com/images)
 [![ArtifactHub](https://img.shields.io/badge/ArtifactHub-verified%20publisher-417598.svg)](https://artifacthub.io/packages/search?org=quenchworks)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/quenchworks)
 
-[**Website**](https://quenchworks.mkabumattar.com) · [**Charts**](https://quenchworks.mkabumattar.com/charts) · [**Images**](https://quenchworks.mkabumattar.com/images) · [**Roadmap**](https://quenchworks.mkabumattar.com/roadmap) · [**Docs**](https://quenchworks.mkabumattar.com/docs) · [**ArtifactHub**](https://artifacthub.io/packages/search?org=quenchworks)
+[**Website**](https://quench-works.com) · [**Charts**](https://quench-works.com/charts) · [**Images**](https://quench-works.com/images) · [**Roadmap**](https://quench-works.com/roadmap) · [**Docs**](https://quench-works.com/docs) · [**ArtifactHub**](https://artifacthub.io/packages/search?org=quenchworks)
 
 </div>
 
@@ -75,7 +75,7 @@ No account, no token, no paywall. Swap `redis:8.8.0` for any app and version in 
 | **Secrets / identity** | OpenBao · Keycloak |
 | **Registry · Git · CI/IaC** | Harbor · Gitea · Atlantis |
 
-Browse all of it, with versions, digests, and provenance, at [quenchworks.mkabumattar.com](https://quenchworks.mkabumattar.com).
+Browse all of it, with versions, digests, and provenance, at [quench-works.com](https://quench-works.com).
 
 ## The repositories
 
@@ -98,6 +98,6 @@ MIT. Built independently. Not affiliated with any upstream distribution or vendo
 
 ---
 
-**[quenchworks.mkabumattar.com](https://quenchworks.mkabumattar.com)** · made by [@mkabumattar](https://github.com/mkabumattar)
+**[quench-works.com](https://quench-works.com)** · made by [@mkabumattar](https://github.com/mkabumattar)
 
 </div>
