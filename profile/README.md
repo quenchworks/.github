@@ -5,7 +5,7 @@
   <img alt="QuenchWorks" src="https://raw.githubusercontent.com/quenchworks/.github/main/profile/assets/logo.svg" width="460">
 </picture>
 
-# The hardened catalog Bitnami left behind.
+# Free, hardened container images and signed Helm charts.
 
 ### 0-CVE container images and signed Helm charts. Built from source, cosign-signed, pinned by digest. Free and independent.
 
@@ -19,6 +19,10 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/quenchworks)
 
 [**Website**](https://quench-works.com) · [**Charts**](https://quench-works.com/charts) · [**Images**](https://quench-works.com/images) · [**Roadmap**](https://quench-works.com/roadmap) · [**Docs**](https://quench-works.com/docs) · [**ArtifactHub**](https://artifacthub.io/packages/search?org=quenchworks)
+
+<p align="center">
+  <a href="https://quench-works.com"><img src="https://raw.githubusercontent.com/quenchworks/.github/main/profile/assets/demo.gif" alt="QuenchWorks in a terminal: run a 0-CVE image, verify it with cosign, deploy the Helm chart, and watch the pod reach Running." width="760"></a>
+</p>
 
 </div>
 
