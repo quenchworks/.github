@@ -38,7 +38,7 @@
 
 ## QuenchWorks يعيد بناءه، بشكل مفتوح، ومجانًا.
 
-**92 صورة مُحصَّنة** و**54 مخطط Helm موقَّع** للبنية التحتية التي تشغّلها فعليًا. كل صورة مبنية من المصدر على [Wolfi](https://github.com/wolfi-dev) باستخدام [melange](https://github.com/chainguard-dev/melange) و[apko](https://github.com/chainguard-dev/apko). لا ملفات Dockerfile، ولا شيء موروث من توزيعة أخرى. ثم كل واحدة منها:
+**90+ صورة مُحصَّنة** و**50+ مخطط Helm موقَّع** للبنية التحتية التي تشغّلها فعليًا. كل صورة مبنية من المصدر على [Wolfi](https://github.com/wolfi-dev) باستخدام [melange](https://github.com/chainguard-dev/melange) و[apko](https://github.com/chainguard-dev/apko). لا ملفات Dockerfile، ولا شيء موروث من توزيعة أخرى. ثم كل واحدة منها:
 
 - تجتاز بوّابة صارمة بـ **0 ثغرات قابلة للإصلاح (0 fixable CVE)** (Trivy، مع الفشل عند القابلة للإصلاح) قبل أن تتمكّن من النشر،
 - تعمل **بدون صلاحيات الجذر (nonroot)** على **نظام ملفات جذر للقراءة فقط (read-only root filesystem)**،

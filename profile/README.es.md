@@ -38,7 +38,7 @@ Reconstruir todo eso tú mismo es trabajo real, y mantenerlo en cero CVE es un t
 
 ## QuenchWorks lo reconstruye, en abierto, gratis.
 
-**92 imágenes reforzadas** y **54 Helm charts firmados** para la infraestructura que realmente ejecutas. Cada imagen se compila desde el código fuente sobre [Wolfi](https://github.com/wolfi-dev) con [melange](https://github.com/chainguard-dev/melange) y [apko](https://github.com/chainguard-dev/apko). Sin Dockerfiles, nada heredado de otra distro. Luego cada una:
+**90+ imágenes reforzadas** y **50+ Helm charts firmados** para la infraestructura que realmente ejecutas. Cada imagen se compila desde el código fuente sobre [Wolfi](https://github.com/wolfi-dev) con [melange](https://github.com/chainguard-dev/melange) y [apko](https://github.com/chainguard-dev/apko). Sin Dockerfiles, nada heredado de otra distro. Luego cada una:
 
 - supera una estricta puerta de **0 CVE corregibles** (Trivy, fail-on-fixable) antes de poder publicarse,
 - se ejecuta como **nonroot** en un **sistema de archivos raíz de solo lectura**,

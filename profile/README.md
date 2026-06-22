@@ -38,7 +38,7 @@ Rebuilding all of that yourself is real work, and keeping it at zero CVEs is wor
 
 ## QuenchWorks rebuilds it, in the open, for free.
 
-**92 hardened images** and **54 signed Helm charts** for the infrastructure you actually run. Every image is built from source on [Wolfi](https://github.com/wolfi-dev) with [melange](https://github.com/chainguard-dev/melange) and [apko](https://github.com/chainguard-dev/apko). No Dockerfiles, nothing inherited from another distro. Then each one:
+**90+ hardened images** and **50+ signed Helm charts** for the infrastructure you actually run. Every image is built from source on [Wolfi](https://github.com/wolfi-dev) with [melange](https://github.com/chainguard-dev/melange) and [apko](https://github.com/chainguard-dev/apko). No Dockerfiles, nothing inherited from another distro. Then each one:
 
 - clears a hard **0 fixable CVE** gate (Trivy, fail-on-fixable) before it can publish,
 - runs **nonroot** on a **read-only root filesystem**,
