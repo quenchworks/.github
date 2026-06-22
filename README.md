@@ -1,5 +1,7 @@
 # `.github`
 
+**English** · [العربية](README.ar.md) · [Español](README.es.md)
+
 Org-level defaults and community-health files for [QuenchWorks](https://github.com/quenchworks), the 0-CVE hardened replacement for the Bitnami catalog. This repo doesn't ship images or charts; it sets the house rules that apply across every repo in the org.
 
 The hero you see at [github.com/quenchworks](https://github.com/quenchworks) lives in [`profile/README.md`](./profile/README.md). Everything else here is the boring-but-load-bearing stuff: how to report a vulnerability, how to propose an app, how we behave.

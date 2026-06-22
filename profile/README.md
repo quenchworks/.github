@@ -1,5 +1,7 @@
 <div align="center">
 
+**English** · [العربية](README.ar.md) · [Español](README.es.md)
+
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/quenchworks/.github/main/profile/assets/logo-dark.svg">
   <img alt="QuenchWorks" src="https://raw.githubusercontent.com/quenchworks/.github/main/profile/assets/logo.svg" width="460">
@@ -9,8 +11,8 @@
 
 ### 0-CVE container images and signed Helm charts. Built from source, cosign-signed, pinned by digest. Free and independent.
 
-[![Images](https://img.shields.io/badge/images-92%20hardened-0a0a0c.svg)](https://quench-works.com/images)
-[![Charts](https://img.shields.io/badge/charts-54%20signed-0a0a0c.svg)](https://quench-works.com/charts)
+[![Images](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fquench-works.com%2Fapi%2Fv1%2Fimages.json&query=%24.total&label=images&suffix=%20hardened&color=0a0a0c)](https://quench-works.com/images)
+[![Charts](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fquench-works.com%2Fapi%2Fv1%2Fcharts.json&query=%24.total&label=charts&suffix=%20signed&color=0a0a0c)](https://quench-works.com/charts)
 [![Fixable CVEs](https://img.shields.io/badge/fixable%20CVEs-0-1d2b3a.svg)](https://quench-works.com/security)
 [![Built with Wolfi](https://img.shields.io/badge/built%20from%20source-Wolfi%20%2F%20apko-1d2b3a.svg)](https://github.com/wolfi-dev)
 [![Signed with cosign](https://img.shields.io/badge/signed-cosign%20keyless-0a0a0c.svg)](https://docs.sigstore.dev/)
