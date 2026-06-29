@@ -11,14 +11,14 @@
 
 ### صور حاويات بصفر ثغرات (0-CVE) ومخططات Helm موقَّعة. مبنية من المصدر، موقَّعة بـ cosign، ومثبَّتة بالبصمة الرقمية (digest). مجانية ومستقلة.
 
-[![Images](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fquench-works.com%2Fapi%2Fv1%2Fimages.json&query=%24.total&label=images&suffix=%20hardened&color=0a0a0c)](https://quench-works.com/images)
-[![Charts](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fquench-works.com%2Fapi%2Fv1%2Fcharts.json&query=%24.total&label=charts&suffix=%20signed&color=0a0a0c)](https://quench-works.com/charts)
-[![Fixable CVEs](https://img.shields.io/badge/fixable%20CVEs-0-1d2b3a.svg)](https://quench-works.com/security)
-[![Built with Wolfi](https://img.shields.io/badge/built%20from%20source-Wolfi%20%2F%20apko-1d2b3a.svg)](https://github.com/wolfi-dev)
-[![Signed with cosign](https://img.shields.io/badge/signed-cosign%20keyless-0a0a0c.svg)](https://docs.sigstore.dev/)
-[![Multi-arch](https://img.shields.io/badge/arch-amd64%20%2B%20arm64-0a0a0c.svg)](https://quench-works.com/images)
-[![ArtifactHub](https://img.shields.io/badge/ArtifactHub-verified%20publisher-417598.svg)](https://artifacthub.io/packages/search?org=quenchworks)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/quenchworks)
+[![Images](https://img.shields.io/endpoint?url=https://quench-works.com/api/v1/badge/images.json)](https://quench-works.com/images)
+[![Charts](https://img.shields.io/endpoint?url=https://quench-works.com/api/v1/badge/charts.json)](https://quench-works.com/charts)
+[![Fixable CVEs](https://img.shields.io/endpoint?url=https://quench-works.com/api/v1/badge/fixable.json)](https://quench-works.com/security)
+[![Built with Wolfi](https://img.shields.io/endpoint?url=https://quench-works.com/api/v1/badge/wolfi.json)](https://github.com/wolfi-dev)
+[![Signed with cosign](https://img.shields.io/endpoint?url=https://quench-works.com/api/v1/badge/cosign.json)](https://docs.sigstore.dev/)
+[![Multi-arch](https://img.shields.io/endpoint?url=https://quench-works.com/api/v1/badge/multiarch.json)](https://quench-works.com/images)
+[![ArtifactHub](https://img.shields.io/endpoint?url=https://quench-works.com/api/v1/badge/artifacthub.json)](https://artifacthub.io/packages/search?org=quenchworks)
+[![License](https://img.shields.io/endpoint?url=https://quench-works.com/api/v1/badge/license.json)](https://github.com/quenchworks)
 
 [**الموقع**](https://quench-works.com) · [**المخططات**](https://quench-works.com/charts) · [**الصور**](https://quench-works.com/images) · [**خارطة الطريق**](https://quench-works.com/roadmap) · [**التوثيق**](https://quench-works.com/docs) · [**ArtifactHub**](https://artifacthub.io/packages/search?org=quenchworks)
 
