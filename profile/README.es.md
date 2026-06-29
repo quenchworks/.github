@@ -13,7 +13,7 @@
 
 [![Images](https://img.shields.io/endpoint?url=https://quench-works.com/api/v1/badge/images.json)](https://quench-works.com/images)
 [![Charts](https://img.shields.io/endpoint?url=https://quench-works.com/api/v1/badge/charts.json)](https://quench-works.com/charts)
-[![Fixable CVEs](https://img.shields.io/endpoint?url=https://quench-works.com/api/v1/badge/fixable.json)](https://quench-works.com/security)
+[![open CVEs](https://img.shields.io/endpoint?url=https://quench-works.com/api/v1/badge/cves.json)](https://quench-works.com/security)
 [![Built with Wolfi](https://img.shields.io/endpoint?url=https://quench-works.com/api/v1/badge/wolfi.json)](https://github.com/wolfi-dev)
 [![Signed with cosign](https://img.shields.io/endpoint?url=https://quench-works.com/api/v1/badge/cosign.json)](https://docs.sigstore.dev/)
 [![Multi-arch](https://img.shields.io/endpoint?url=https://quench-works.com/api/v1/badge/multiarch.json)](https://quench-works.com/images)
