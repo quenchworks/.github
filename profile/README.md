@@ -81,7 +81,7 @@ No account, no token, no paywall. Swap `redis:8.8.0` for any app and version in 
 | **Secrets / identity** | OpenBao · Keycloak |
 | **Registry · Git · CI/IaC** | Harbor · Gitea · Atlantis |
 
-Plus **16 stacks** that install several charts already wired together: observability, logging, tracing, LGTM, identity, secrets, cache, PostgreSQL HA, streaming, ML, LLM, lakehouse, GitOps, Sigstore, backup and ingress with TLS. See [quench-works.com/stacks](https://quench-works.com/stacks).
+Plus **17 stacks** that install several charts already wired together: observability, logging, tracing, LGTM, identity, secrets, cache, PostgreSQL HA, streaming, ML, LLM, lakehouse, GitOps, Sigstore, backup, ingress with TLS, and signed-image admission. See [quench-works.com/stacks](https://quench-works.com/stacks).
 
 Browse all of it, with versions, digests, and provenance, at [quench-works.com](https://quench-works.com).
 
