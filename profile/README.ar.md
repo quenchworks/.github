@@ -38,7 +38,7 @@
 
 ## QuenchWorks يعيد بناءه، بشكل مفتوح، ومجانًا.
 
-**90+ صورة مُحصَّنة** و**50+ مخطط Helm موقَّع** للبنية التحتية التي تشغّلها فعليًا. كل صورة مبنية من المصدر على [Wolfi](https://github.com/wolfi-dev) باستخدام [melange](https://github.com/chainguard-dev/melange) و[apko](https://github.com/chainguard-dev/apko). لا ملفات Dockerfile، ولا شيء موروث من توزيعة أخرى. ثم كل واحدة منها:
+**300+ صورة مُحصَّنة** و**230+ مخطط Helm موقَّع** للبنية التحتية التي تشغّلها فعليًا. كل صورة مبنية من المصدر على [Wolfi](https://github.com/wolfi-dev) باستخدام [melange](https://github.com/chainguard-dev/melange) و[apko](https://github.com/chainguard-dev/apko). لا ملفات Dockerfile، ولا شيء موروث من توزيعة أخرى. ثم كل واحدة منها:
 
 - تجتاز بوّابة صارمة بـ **0 ثغرات قابلة للإصلاح (0 fixable CVE)** (Trivy، مع الفشل عند القابلة للإصلاح) قبل أن تتمكّن من النشر،
 - تعمل **بدون صلاحيات الجذر (nonroot)** على **نظام ملفات جذر للقراءة فقط (read-only root filesystem)**،
@@ -80,6 +80,8 @@ cosign verify ghcr.io/quenchworks/images/redis:8.8.0 \
 | **تخزين كائنات** | Garage · RustFS · SeaweedFS |
 | **أسرار / هوية** | OpenBao · Keycloak |
 | **سجلّ · Git · CI/IaC** | Harbor · Gitea · Atlantis |
+
+إضافةً إلى **15 حزمة** (stacks) تثبّت عدة مخططات موصولة ببعضها مسبقًا: المراقبة، والسجلات، والتتبّع، وLGTM، والهوية، والأسرار، والتخزين المؤقت، وPostgreSQL عالي التوافر، والبث، وتعلّم الآلة، والنماذج اللغوية، وlakehouse، وGitOps، وSigstore، والنسخ الاحتياطي. تصفّحها على [quench-works.com/ar/stacks](https://quench-works.com/ar/stacks).
 
 تصفّح كل ذلك، مع الإصدارات والبصمات الرقمية (digests) والمصدر (provenance)، على [quench-works.com](https://quench-works.com).
 

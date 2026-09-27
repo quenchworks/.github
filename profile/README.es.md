@@ -38,7 +38,7 @@ Reconstruir todo eso tú mismo es trabajo real, y mantenerlo en cero CVE es un t
 
 ## QuenchWorks lo reconstruye, en abierto, gratis.
 
-**90+ imágenes reforzadas** y **50+ Helm charts firmados** para la infraestructura que realmente ejecutas. Cada imagen se compila desde el código fuente sobre [Wolfi](https://github.com/wolfi-dev) con [melange](https://github.com/chainguard-dev/melange) y [apko](https://github.com/chainguard-dev/apko). Sin Dockerfiles, nada heredado de otra distro. Luego cada una:
+**300+ imágenes reforzadas** y **230+ Helm charts firmados** para la infraestructura que realmente ejecutas. Cada imagen se compila desde el código fuente sobre [Wolfi](https://github.com/wolfi-dev) con [melange](https://github.com/chainguard-dev/melange) y [apko](https://github.com/chainguard-dev/apko). Sin Dockerfiles, nada heredado de otra distro. Luego cada una:
 
 - supera una estricta puerta de **0 CVE corregibles** (Trivy, fail-on-fixable) antes de poder publicarse,
 - se ejecuta como **nonroot** en un **sistema de archivos raíz de solo lectura**,
@@ -80,6 +80,8 @@ Sin cuenta, sin token, sin muro de pago. Cambia `redis:8.8.0` por cualquier apli
 | **Almacenamiento de objetos** | Garage · RustFS · SeaweedFS |
 | **Secretos / identidad** | OpenBao · Keycloak |
 | **Registro · Git · CI/IaC** | Harbor · Gitea · Atlantis |
+
+Y **15 stacks** que instalan varios charts ya conectados entre sí: observabilidad, logs, trazas, LGTM, identidad, secretos, caché, PostgreSQL HA, streaming, ML, LLM, lakehouse, GitOps, Sigstore y backup. Míralos en [quench-works.com/es/stacks](https://quench-works.com/es/stacks).
 
 Explóralo todo, con versiones, digests y procedencia, en [quench-works.com](https://quench-works.com).
 

@@ -38,7 +38,7 @@ Rebuilding all of that yourself is real work, and keeping it at zero CVEs is wor
 
 ## QuenchWorks rebuilds it, in the open, for free.
 
-**90+ hardened images** and **50+ signed Helm charts** for the infrastructure you actually run. Every image is built from source on [Wolfi](https://github.com/wolfi-dev) with [melange](https://github.com/chainguard-dev/melange) and [apko](https://github.com/chainguard-dev/apko). No Dockerfiles, nothing inherited from another distro. Then each one:
+**300+ hardened images** and **230+ signed Helm charts** for the infrastructure you actually run. Every image is built from source on [Wolfi](https://github.com/wolfi-dev) with [melange](https://github.com/chainguard-dev/melange) and [apko](https://github.com/chainguard-dev/apko). No Dockerfiles, nothing inherited from another distro. Then each one:
 
 - clears a hard **0 fixable CVE** gate (Trivy, fail-on-fixable) before it can publish,
 - runs **nonroot** on a **read-only root filesystem**,
@@ -80,6 +80,8 @@ No account, no token, no paywall. Swap `redis:8.8.0` for any app and version in 
 | **Object storage** | Garage · RustFS · SeaweedFS |
 | **Secrets / identity** | OpenBao · Keycloak |
 | **Registry · Git · CI/IaC** | Harbor · Gitea · Atlantis |
+
+Plus **15 stacks** that install several charts already wired together: observability, logging, tracing, LGTM, identity, secrets, cache, PostgreSQL HA, streaming, ML, LLM, lakehouse, GitOps, Sigstore and backup. See [quench-works.com/stacks](https://quench-works.com/stacks).
 
 Browse all of it, with versions, digests, and provenance, at [quench-works.com](https://quench-works.com).
 
