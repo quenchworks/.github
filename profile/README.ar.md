@@ -81,7 +81,7 @@ cosign verify ghcr.io/quenchworks/images/redis:8.8.0 \
 | **أسرار / هوية** | OpenBao · Keycloak |
 | **سجلّ · Git · CI/IaC** | Harbor · Gitea · Atlantis |
 
-إضافةً إلى **15 حزمة** (stacks) تثبّت عدة مخططات موصولة ببعضها مسبقًا: المراقبة، والسجلات، والتتبّع، وLGTM، والهوية، والأسرار، والتخزين المؤقت، وPostgreSQL عالي التوافر، والبث، وتعلّم الآلة، والنماذج اللغوية، وlakehouse، وGitOps، وSigstore، والنسخ الاحتياطي. تصفّحها على [quench-works.com/ar/stacks](https://quench-works.com/ar/stacks).
+إضافةً إلى **16 حزمة** (stacks) تثبّت عدة مخططات موصولة ببعضها مسبقًا: المراقبة، والسجلات، والتتبّع، وLGTM، والهوية، والأسرار، والتخزين المؤقت، وPostgreSQL عالي التوافر، والبث، وتعلّم الآلة، والنماذج اللغوية، وlakehouse، وGitOps، وSigstore، والنسخ الاحتياطي، وingress مع TLS. تصفّحها على [quench-works.com/ar/stacks](https://quench-works.com/ar/stacks).
 
 تصفّح كل ذلك، مع الإصدارات والبصمات الرقمية (digests) والمصدر (provenance)، على [quench-works.com](https://quench-works.com).
 
