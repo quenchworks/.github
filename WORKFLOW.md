@@ -41,6 +41,12 @@ The board's Status column says where it is:
 A ticket closes only when its done condition holds: an app is live on GHCR, ArtifactHub, in the
 catalog lock and on the website; a CVE shows 0 in the next nightly scan.
 
+How a ticket moves: it is opened before the first commit, with the sizing numbers and a "Done when"
+line. Every commit for it ends with `Refs #N` (`Refs quenchworks/images#N` from another repo). Each
+milestone (local gate, image build, chart release, lock, website) gets a short comment with the
+commit and the workflow run link. A blocked ticket gets the `held` label and a dated re-check note
+in its description.
+
 ## Shipping a new app
 
 1. **Pick.** Apps come from the roadmap: `next` rows first, then `planned` rows with a clean OSI
