@@ -9,7 +9,7 @@ open: a ticket, a commit, a workflow run, a scan result.
 
 | What you want to see | Where it is |
 |---|---|
-| What is being worked on now, what is next, what is held | The project board: [QuenchWorks work](https://github.com/orgs/quenchworks/projects) |
+| What is being worked on now, what is next, what is held | The project board: [QuenchWorks work](https://github.com/orgs/quenchworks/projects/1) |
 | One piece of work, its reasons and its history | The ticket (an issue in `images`, `charts` or `website`) |
 | Every image build, gate and publish | [images Actions](https://github.com/quenchworks/images/actions) |
 | Every chart install gate, release and signature | [charts Actions](https://github.com/quenchworks/charts/actions) |
