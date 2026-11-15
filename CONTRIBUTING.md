@@ -33,6 +33,9 @@ When you open a chart PR, note the upstream docs you worked from.
 
 ## Workflow
 
+How work moves from ticket to shipped image, and where to watch it: [WORKFLOW.md](./WORKFLOW.md).
+
+
 1. Fork and branch from `main` (`feat/<app>`, `fix/<thing>`).
 2. Keep commits focused; reference the issue ID.
 3. Open a PR. CI runs the gates above, and green CI is required to merge.
